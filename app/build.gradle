@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.andrea.uncut"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.3'
+    implementation 'androidx.navigation:navigation-ui:2.3.3'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-firestore:21.4.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+    //added libraries
+    implementation 'de.hdodenhof:circleimageview:2.2.0' // Library for circle image
+    implementation 'com.github.bumptech.glide:glide:4.11.0' // Library for uploading an image
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+' // Image cropper
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4' // Edit Text
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0' // Legacy support
+    testImplementation 'junit:junit:4.12' // JUnit tests
+    testImplementation 'androidx.test:core:1.0.0' // Roboelectric environment
+    testImplementation 'org.mockito:mockito-core:3.2.4' // Mockito framework
+    androidTestImplementation "com.google.truth:truth:1.1.2" // Truth framework
+    androidTestImplementation 'androidx.test:runner:1.3.0' // Test
+    androidTestImplementation 'androidx.test:rules:1.3.0' // Test
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2' // JUnit
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0' // Espresso
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.2.0'     //UI testing with UI Automator
+
+    androidTestImplementation 'org.hamcrest:hamcrest-library:1.3'  //Hamcrest library
+
+}

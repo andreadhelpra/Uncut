@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "486749028685",
+    "project_id": "uncut-301df",
+    "storage_bucket": "uncut-301df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486749028685:android:ac0cc0128af6be7e7cf704",
+        "android_client_info": {
+          "package_name": "com.andrea.uncut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486749028685-4jrf9t7o6kk19jd9siaskdk4ial1gf8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUFzw8bY7AWqE27kg6T_1d_cZna5yf47A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486749028685-4jrf9t7o6kk19jd9siaskdk4ial1gf8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
